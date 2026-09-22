@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="MedHome">
+  <defs>
+    <linearGradient id="vmTile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12908C"/>
+      <stop offset="1" stop-color="#0B3B44"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="32" fill="url(#vmTile)"/>
+  <!-- ECG / пульс жизни (Vita) -->
+  <path d="M22 70 H46 l7 -22 12 44 8 -34 6 20 H106"
+        fill="none" stroke="#ffffff" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- золотой медицинский плюс -->
+  <g fill="#C6A15B">
+    <rect x="90" y="30" width="8" height="24" rx="3"/>
+    <rect x="82" y="38" width="24" height="8" rx="3"/>
+  </g>
+</svg>
