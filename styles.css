@@ -1137,3 +1137,58 @@ a.contact-card:hover {
   .ecg-line-big { stroke-dasharray: none; }
   .accent-word::after { transform: scaleX(1); animation: none; }
 }
+
+/* ================= МУЛЬТИСТРАНИЧНИК: города ================= */
+/* City hero (без визуальной карточки, одна колонка) */
+.hero-city { min-height: auto; padding: calc(var(--header-h) + 56px) 0 76px; }
+.hero-inner-city { display: block; max-width: 860px; }
+.hero-inner-city .hero-title { font-size: clamp(2rem, 6vw, 3.6rem); }
+.hero-inner-city .hero-sub { max-width: 680px; }
+
+/* Переключатель городов */
+.city-switch {
+  position: sticky; top: var(--header-h); z-index: 40;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid rgba(11,59,68,.08);
+}
+.city-switch-inner {
+  display: flex; align-items: center; gap: 10px;
+  padding-top: 12px; padding-bottom: 12px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.city-switch-inner::-webkit-scrollbar { display: none; }
+.city-switch-label { color: var(--muted); font-size: .86rem; font-weight: 600; white-space: nowrap; flex: 0 0 auto; }
+.city-switch-link {
+  flex: 0 0 auto; white-space: nowrap;
+  padding: 8px 16px; border-radius: 999px;
+  font-size: .9rem; font-weight: 600; color: var(--teal-2);
+  background: var(--ivory); border: 1px solid rgba(14,124,123,.16);
+  transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+.city-switch-link:hover { background: rgba(14,124,123,.10); border-color: rgba(14,124,123,.32); }
+.city-switch-link.active { background: var(--teal); color: #fff; border-color: var(--teal); }
+
+/* Ссылки в карточках городов на главной */
+.city-title-link { color: inherit; }
+.city-title-link:hover { color: var(--teal-bright); }
+.city-link-more { font-weight: 700; }
+
+/* Баннер списка регионов (regiony.html) */
+.regions-banner {
+  margin: 8px 0 30px; padding: 26px 28px;
+  background: var(--ivory); border: 1px solid rgba(14,124,123,.14);
+  border-radius: var(--radius);
+}
+.regions-banner h3 { font-family: var(--font-body); font-size: 1.05rem; color: var(--ink); margin-bottom: 14px; }
+.regions-list-wide {
+  display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0 0 12px;
+}
+.regions-list-wide li {
+  padding: 8px 15px; border-radius: 999px;
+  background: #fff; border: 1px solid rgba(14,124,123,.18);
+  font-weight: 600; font-size: .92rem; color: var(--teal-2);
+}
+.regions-banner .regions-note { color: var(--muted); font-size: .92rem; margin: 0; }
