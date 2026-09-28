@@ -889,6 +889,7 @@ ul, ol { list-style: none; }
   margin-bottom: 6px;
 }
 .counter span { font-size: .82rem; color: var(--muted); line-height: 1.4; display: inline-block; }
+.counter strong .count { font: inherit; color: inherit; display: inline; }
 @media (max-width: 640px) {
   .counters { grid-template-columns: 1fr; }
   .counter { padding: 20px 12px; }
