@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dom.med-home.kz/sitemap.xml
+Sitemap: https://med-home.kz/regiony/sitemap.xml
