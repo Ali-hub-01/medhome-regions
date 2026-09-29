@@ -123,12 +123,6 @@
 
       /* хук для аналитики (gtag повесят позже) */
       trackConversion('lead_form_submit', { city: city || 'not_selected', service: service || 'not_selected' });
-
-      /* дублируем заявку боту (Telegram через Cloudflare Worker) */
-      var phone = form.elements.phone.value.trim();
-      if (window.medhomeSendLead) {
-        window.medhomeSendLead({ name: name, phone: phone, service: service, city: city, source: 'форма на сайте', fireConversion: false });
-      }
     });
 
     /* снятие подсветки ошибки при вводе */
