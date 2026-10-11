@@ -1193,3 +1193,7 @@ a.contact-card:hover {
   font-weight: 600; font-size: .92rem; color: var(--teal-2);
 }
 .regions-banner .regions-note { color: var(--muted); font-size: .92rem; margin: 0; }
+
+.footer-legal{margin:10px 0 0;font-size:.85rem;line-height:1.5}
+.footer-legal a{color:#cfe3e4;margin:0 4px;text-decoration:none}
+.footer-legal a:hover{text-decoration:underline;color:#fff}
